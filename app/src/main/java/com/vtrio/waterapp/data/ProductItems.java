@@ -64,7 +64,7 @@ public class ProductItems extends BaseObservable {
     public void setProductItemDescription(String productItemDescription) {
         this.productItemDescription = productItemDescription;
     }
-    
+
 
     @Bindable
     public ObservableInt getProductItemQty() {
