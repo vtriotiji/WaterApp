@@ -46,6 +46,7 @@ public class ProductItems extends BaseObservable {
     }
 
     public void setProductItemPrice(String productItemPrice) {
+        
         this.productItemPrice = productItemPrice;
     }
 
