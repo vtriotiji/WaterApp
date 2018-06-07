@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WaterApp</string>
+    <string name="cd_appLogoImageView">App Logo</string>
+    <string name="location_check">Checking Your Location Deliverability</string>
+    <string name="location_service_not_available">Location Service Not Available</string>
+    <string name="lat_lng_invalid">Invalid Latitude And Longitude</string>
+    <string name="Address_Not_Retreivable">Address Not Retreivable</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="product_title">20 Ltrs Water Can</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="Total">Total </string>
+    <string name="Rupee"> \u20B9</string>
+    <string name="ADD_CART">Add Cart</string>
+    <string name="CHECKOUT">Check Out</string>
+
+    <string name="Delivery_Address">Delivery Address</string>
+    <string name="Landmark">Landmark</string>
+    <string name="Exisiting_User">Existing User</string>
+    <string name="New_User">New User</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="User_Name">User Name</string>
+    <string name="Email_id">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="OTP">OTP</string>
+    <string name="cancel">CANCEL</string>
+    <string name="register">REGISTER</string>
+    <string name="Sign_In">SIGN IN</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="select_product">SELECT PRODUCT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

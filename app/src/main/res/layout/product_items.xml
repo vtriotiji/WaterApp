@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ProductItemBinding">
+
+        <variable
+            name="productItems"
+            type="com.vtrio.waterapp.data.ProductItems" />
+
+        <variable
+            name="handler"
+            type="com.vtrio.waterapp.listeners.QuantityHandler" />
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_corner_bluegradient"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            app:imgSrc="@{productItems.productItemImage}" />
+
+
+        <LinearLayout
+            android:id="@+id/productInfoLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.45"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{productItems.productItemTitleName}" />
+
+
+            <TextView
+                android:id="@+id/productPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{productItems.productItemPrice}" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/quantityModRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.25"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/subtractQtyButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/addsubColor"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="@{(v) -> handler.onQuantityDecrement()}"
+                android:text="@string/sub"
+                android:textColor="@color/addsubTextColor" />
+
+
+            <TextView
+                android:id="@+id/qtyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@={`` +productItems.productItemQty}" />
+
+            <Button
+                android:id="@+id/addQtyButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/addsubColor"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="@{(v) -> handler.onQuantityIncrement()}"
+                android:text="@string/add"
+                android:textColor="@color/addsubTextColor" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

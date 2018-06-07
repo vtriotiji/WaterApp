@@ -1,0 +1,54 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <!--&lt;!&ndash; for nexus !&ndash;&gt;-->
+
+
+    <!--<dimen name="chat_name_heading">8sp</dimen>-->
+
+    <!--<dimen name="chat_time">5sp</dimen>-->
+    <!--<dimen name="message_text">6sp</dimen>-->
+    <!--<dimen name="chat_title_name">5sp</dimen>-->
+    <!--<dimen name="chat_description">3sp</dimen>-->
+
+    <!--&lt;!&ndash; Login section &ndash;&gt;-->
+    <!--<dimen name="login_name_heading">7.4sp</dimen>-->
+    <!--<dimen name="login_edit_text">6sp</dimen>-->
+
+
+    <!-- dimensions in sp -->
+
+
+    <dimen name="dim_8_pt">0.672dip</dimen>
+    <dimen name="dim_16_pt">1.344dip</dimen>
+    <dimen name="dim_24_pt">2.016dip</dimen>
+    <dimen name="dim_32_pt">2.688dip</dimen>
+    <dimen name="dim_40_pt">3.36dip</dimen>
+    <dimen name="dim_48_pt">4.032dip</dimen>
+    <dimen name="dim_56_pt">4.704dip</dimen>
+    <dimen name="dim_64_pt">5.376dip</dimen>
+    <dimen name="dim_72_pt">6.048dip</dimen>
+    <dimen name="dim_80_pt">6.72dip</dimen>
+    <dimen name="dim_104_pt">8.736dip</dimen>
+    <dimen name="dim_120_pt">10.08dip</dimen>
+    <dimen name="dim_144_pt">12.096dip</dimen>
+    <dimen name="dim_432_pt">36.288dip</dimen>
+
+    <!-- dimensions in dp -->
+
+    <dimen name="progress_bar_height_horizontal">144dp</dimen>
+
+    <dimen name="negative_vertical_margin">-40dp</dimen>
+
+    <dimen name="vertical_margin">50dp</dimen>
+
+    <dimen name="plaecif_chatwindow_dp_size">40dp</dimen>
+
+    <dimen name="placeif_chathistorylist_dp_size">50dp</dimen>
+
+    <dimen name="dialog_box_padding">25dp</dimen>
+
+</resources>

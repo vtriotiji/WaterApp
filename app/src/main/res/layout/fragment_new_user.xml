@@ -1,0 +1,208 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="userNameLabel"
+            type="String" />
+
+
+        <variable
+            name="emailLabel"
+            type="String" />
+
+        <variable
+            name="mobileLabel"
+            type="String" />
+
+        <variable
+            name="otpLabel"
+            type="String" />
+
+        <variable
+            name="cancelButtonLabel"
+            type="String" />
+
+        <variable
+            name="registerButtonLabel"
+            type="String" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.vtrio.waterapp.ui.NewUserFragment">
+
+        <TextView
+            android:id="@+id/userNameLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@{userNameLabel}"
+            android:textColor="@color/darkblue" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userNameTextInputLayout"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_round_border"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/userNameTextInputEditText"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@color/textColor"
+                android:ems="100" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/emailIDLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@{emailLabel}"
+            android:textColor="@color/darkblue" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailIDTextInputLayout"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_round_border"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/emailIDTextInputEditText"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/textColor"
+                android:ems="100" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mobileLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{mobileLabel}"
+                    android:textColor="@color/darkblue" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/mobileTextInputLayout"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_round_border"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/mobileTextInputEditText"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/textColor"
+                        android:ems="5" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/otpLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{otpLabel}"
+                    android:textColor="@color/darkblue" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/otpTextInputLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_round_border"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/otpTextInputEditText"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/textColor"
+                        android:ems="5" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_rounded_corner_bluegradient"
+                android:text="@{cancelButtonLabel}"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_rounded_corner_bluegradient"
+                android:text="@{registerButtonLabel}"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

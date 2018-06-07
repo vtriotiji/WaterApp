@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+
+
+        <android.support.design.widget.TabLayout
+            name="firsttabitem"
+            type="String" />
+
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.vtrio.waterapp.ui.SplashActivity">
+
+        <LinearLayout
+            android:id="@+id/titleLogoLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/appLogoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_appLogoImageView"
+                android:src="@drawable/watercan" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{title}"
+                android:textColor="@color/darkblue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/locationDetectionLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLogoLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{message}" />
+
+            <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+                android:id="@+id/progress_bar"
+                animationDirection="left"
+                duration="@android:integer/config_mediumAnimTime"
+                endColor="@color/light_blue_A400"
+                startColor="@color/light_blue_A700"
+                android:layout_width="30dp"
+                android:layout_height="11dp"
+                custom:amount="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationDetectionLinearLayout"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/userTabLayout"
+                style="@style/AppTabLayout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/AppTabTextAppearance">
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/existingUserTabItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Exisiting_User" />
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/newUserTabItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/New_User" />
+            </android.support.design.widget.TabLayout>
+
+            <FrameLayout
+                android:id="@+id/simpleFrameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
